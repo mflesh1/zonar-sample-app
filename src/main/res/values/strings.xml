@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drivers_press_me">Drivers (press me)</string>
+    <string name="refresh">Refresh</string>
+    <string name="who_with_status">%1$s: %2$s</string>
+    <string name="directions"><![CDATA[To see the tile on the Home screen the Sample2020App must be configured for the device. Configure via CM>2020 Packages]]></string>
+</resources>

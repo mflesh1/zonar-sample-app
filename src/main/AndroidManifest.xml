@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zonarsystems.Sample2020App"
+    tools:ignore="MockLocation">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:label="Sample2020App"
+            android:theme="@android:style/Theme.Black">
+        <activity
+                android:name=".MainActivity"
+                android:label="Sample2020App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Drivers.DriverActivity"
+                android:label="Driver Profile Manager"/>
+
+        <activity
+                android:name=".DeviceProfile.DeviceProfileActivity"
+                android:label="Device Profile Manager"/>
+
+        <activity
+                android:name=".VehicleDeviceInfo.VehicleDeviceInfoActivity"
+                android:label="Vehicle Device Info"/>
+        <activity
+                android:name=".Tiles.ShellTileActivity"
+                android:label="Shell Tile"/>
+        <activity
+                android:name=".Hardware.HardwareUtilsActivity"
+                android:label="Hardware Utils"/>
+        <activity
+                android:name=".Location.LocationActivity"
+                android:label="Location"/>
+
+        <receiver android:name=".Tiles.TileRequestUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.zonarsystems.twenty20.tile.intent.action.TILE_REQUEST_UPDATE"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
